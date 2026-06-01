@@ -1,0 +1,24 @@
+server:
+  port: 8080
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/ai_platform
+    username: postgres
+    password: root
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+    properties:
+      hibernate:
+        format_sql: true
+
+jwt:
+  secret: Zm9ydGVzdHNlY3JldGtleWZvcmFpYXNzaXN0YW50MTIzNDU2Nzg5
+
+openrouter:
+  api:
+    key: ${OPENROUTER_API_KEY}
